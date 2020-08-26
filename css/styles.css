@@ -18,6 +18,15 @@
 }
 
 /* Page general styles */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: var(--main-text-color);
   background-color: var(--page-background-color);
@@ -29,9 +38,11 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
 }
 .title {
   color: var(--secondary-text-color);
+  margin: 0;
 }
 .section-title {
   color: var(--secondary-text-color);
@@ -41,9 +52,26 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /* Header Styles */
+.header {
+  margin-top: 24px;
+}
+.header .container,
+.nav {
+  display: flex;
+  align-items: center;
+  /* margin-top: 24px; */
+}
 .logo {
+  margin-right: 93px;
   color: var(--secondary-text-color);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -61,6 +89,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.site-nav {
+  display: flex;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 .site-nav .link {
   color: var(--secondary-text-color);
 }
@@ -70,6 +104,13 @@ body {
 }
 .site-nav .link.current {
   color: var(--emphasis-color);
+}
+.adress-nav {
+  display: flex;
+  margin-left: auto;
+}
+.adress-nav .item + .item {
+  margin-left: 50px;
 }
 .adress-nav .link {
   color: var(--main-text-color);
@@ -138,6 +179,8 @@ body {
 }
 .footer .logo {
   color: white;
+  margin-right: 0;
+  margin-bottom: 20px;
 }
 .footer-adress-nav {
   color: white;
@@ -152,6 +195,9 @@ body {
 .footer-adress-nav .link:hover,
 .footer-adress-nav .link:focus {
   color: var(--emphasis-color);
+}
+.footer-adress-nav .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Portfolio.html personal styles */
