@@ -49,6 +49,8 @@ body {
   margin: 0;
 }
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -195,9 +197,22 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-
+/* What we do section styles*/
+.what-we-do {
+  padding-bottom: 94px;
+}
+.what-we-do-list {
+  display: flex;
+}
+.what-we-do-list .item + .item {
+  margin-left: 30px;
+}
 /* Our crew section styles */
 .our-crew {
+  background-color: var(--crew-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -205,10 +220,27 @@ body {
 }
 .our-crew .title {
   font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.our-crew-members {
+  display: flex;
+}
+.our-crew-members .item {
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+}
+.our-crew-members .item + .item {
+  margin-left: 30px;
 }
 /* Footer Styles */
 .footer {
   background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .logo {
   color: white;
@@ -216,6 +248,7 @@ body {
   margin-bottom: 20px;
 }
 .footer-adress-nav {
+  margin-top: 20px;
   color: white;
   font-weight: 400;
   font-size: 14px;
