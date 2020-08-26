@@ -68,6 +68,9 @@ body {
 .site-nav .link:focus {
   color: var(--emphasis-color);
 }
+.site-nav .link.current {
+  color: var(--emphasis-color);
+}
 .adress-nav .link {
   color: var(--main-text-color);
 }
