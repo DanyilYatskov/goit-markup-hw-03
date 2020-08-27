@@ -67,11 +67,7 @@ body {
 }
 
 /* Header Styles */
-.header {
-  margin-top: 24px;
-  padding-bottom: 25px;
-  /* background-color: teal; */
-}
+
 .header .container,
 .nav {
   display: flex;
@@ -92,10 +88,13 @@ body {
   color: var(--emphasis-color);
 }
 .header .link {
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav {
   display: flex;
@@ -169,10 +168,11 @@ body {
 }
 
 /* Features section styles */
-.features {
+.section-paddings {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .features-list {
   display: flex;
   justify-content: center;
@@ -201,7 +201,7 @@ body {
 
 /* What we do section styles*/
 .what-we-do {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 .what-we-do-list {
   display: flex;
@@ -214,8 +214,6 @@ body {
 /* Our crew section styles */
 .our-crew {
   background-color: var(--crew-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -236,10 +234,12 @@ body {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  padding-bottom: 30px;
 }
 .our-crew-members .item + .item {
   margin-left: 30px;
+}
+.our-crew .text {
+  margin-bottom: 30px;
 }
 
 /* Footer Styles */
@@ -273,10 +273,6 @@ body {
 }
 
 /* Portfolio.html personal styles */
-.our-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .our-projects-nav {
   display: flex;
   margin-bottom: 50px;
@@ -316,7 +312,6 @@ body {
   width: 370px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  padding-bottom: 20px;
 }
 .our-projects-list .item:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -340,6 +335,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 .our-projects-list .link:hover,
 .our-projects-list .link:focus {
